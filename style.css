@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgba(235, 242, 248, 0);
+  background-color: rgba(213, 230, 245, 0.105);
   backdrop-filter: blur(5px);
   top: 0;
   z-index: 9999;
@@ -38,7 +38,7 @@ body {
   backdrop-filter: 100px;
 
   width: 90%;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
   gap: 20px;
@@ -173,6 +173,23 @@ a {
   position: absolute;
   bottom: 40px;
 }
+.contactMe {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactMeTitle {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* mobile responsiveness here */
 
@@ -208,6 +225,6 @@ a {
     font-size: 0.7rem;
   }
   .downArrow {
-    bottom: 60px;
+    bottom: 80px;
   }
 }
