@@ -207,4 +207,7 @@ a {
   .introduction {
     font-size: 0.7rem;
   }
+  .downArrow {
+    bottom: 60px;
+  }
 }
