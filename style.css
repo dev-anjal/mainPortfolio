@@ -142,7 +142,7 @@ a {
   background-color: var(--aboutMeBgColor);
 }
 .line {
-  width: 94%;
+  width: 90%;
   z-index: 0;
   background-color: rgba(62, 60, 60, 0.754);
   height: 3px;
@@ -197,6 +197,9 @@ a {
   }
   .introduction {
     font-size: 1rem;
+  }
+  .line {
+    width: 98%;
   }
 }
 
