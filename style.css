@@ -220,6 +220,9 @@ footer {
   .introMainSection {
     width: 100%;
   }
+  .introMainSection .aboutText {
+    padding: 0;
+  }
 
   .navigationItems {
     display: none;
@@ -240,6 +243,6 @@ footer {
     font-size: 0.7rem;
   }
   .downArrow {
-    bottom: 80px;
+    bottom: 100px;
   }
 }
