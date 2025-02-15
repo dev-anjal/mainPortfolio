@@ -374,6 +374,33 @@ footer {
     text-align: start;
     font-size: 0.53rem !important;
   }
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .projectDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .projectDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .projectDesc p {
+    text-align: center;
+  }
+  .projectScreenShot {
+    scale: 0.6;
+  }
 }
 
 @media (max-width: 600px) {
