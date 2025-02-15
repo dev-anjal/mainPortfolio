@@ -21,6 +21,7 @@ html {
   display: none;
 }
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 .navWrapper {
