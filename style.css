@@ -118,6 +118,7 @@ body {
   align-items: center;
 }
 #experience {
+  min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -269,6 +270,51 @@ footer {
   height: 80px;
   background-color: var(--aboutMeBgColor);
   opacity: 0.46;
+}
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--aboutMeBgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.featuredText {
+  background-color: var(--aboutMeBgColor);
+  z-index: 99;
+  padding: 10px;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.project1 {
+  display: flex;
+  justify-content: center;
+}
+
+.projectDesc p {
+  align-items: center;
+  text-align: left;
+}
+.techUsed li {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 3.9px;
+  background-color: rgba(101, 101, 101, 0.322);
+}
+.links-code {
+  margin: 7px;
 }
 /* mobile responsiveness here */
 

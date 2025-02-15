@@ -17,9 +17,9 @@
         <div class="navigationItems">
           <ul>
             <a href="#about"><li>About.</li></a>
-            <li>Experience.</li>
-            <li>Projects.</li>
-            <li>Contact.</li>
+            <a href="#experience"><li>Experience.</li></a>
+            <a href="#project"><li>Projects.</li></a>
+            <a href="#contact"><li>Contact.</li></a>
           </ul>
         </div>
         <div class="infoButtons">
@@ -47,9 +47,55 @@
         /></a>
       </div>
     </div>
-    <div class="seperator"></div>
+
+    <div id="about">
+      <div class="about">
+        <div class="aboutMeTitle">
+          <div class="line"></div>
+          <div
+            class="text"
+            style="
+              z-index: 99;
+
+              padding-left: 33px;
+              padding-right: 33px;
+            "
+          >
+            About Me
+          </div>
+        </div>
+        <div class="introMainSection">
+          <div class="introImage">
+            <img
+              src="./images/anjal.jpeg"
+              alt="User Image"
+              width="220px"
+              style="border-radius: 50%; background-position: center"
+            />
+          </div>
+
+          <div class="aboutText">
+            Hi, I'm Anjal Sharma Phuyal, a passionate web developer and aspiring
+            machine learning engineer. I specialize in MERN stack and Next.js,
+            crafting intuitive and scalable applications. Currently, I'm
+            pursuing my bachelor's degree at Itahari International College,
+            Nepal. I love exploring AI, data science, and system design,
+            constantly expanding my skills. Beyond coding, I enjoy teaching
+            programming, mentoring students, and sharing knowledge. My projects
+            range from e-commerce platforms to emergency IoT systems for elderly
+            care. With a problem-solving mindset and a thirst for innovation, I
+            aim to build impactful digital solutions that make a difference. 🚀
+            <br />
+          </div>
+        </div>
+        <div class="line" style="bottom: 0; position: relative"></div>
+      </div>
+    </div>
+    <br /><br />
     <br />
-    <div id="experience">
+    <div id="experience" style="display: flex; flex-direction: column">
+      <div class="seperator"></div>
+
       <div class="experience">
         <div class="experienceTitle">
           <div class="line" style="opacity: 0.7; height: 1.7px"></div>
@@ -136,54 +182,147 @@
           </div>
         </div>
       </div>
+      <div class="seperator" id="project"></div>
     </div>
     <br />
-    <div class="seperator"></div>
-
-    <div id="about">
-      <div class="about">
-        <div class="aboutMeTitle">
+    <div>
+      <div class="projects">
+        <div
+          style="
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
           <div class="line"></div>
-          <div
-            class="text"
-            style="
-              z-index: 99;
-
-              padding-left: 33px;
-              padding-right: 33px;
-            "
-          >
-            About Me
-          </div>
+          <div class="featuredText">Featured Projects</div>
         </div>
-        <div class="introMainSection">
-          <div class="introImage">
+        <div
+          class="project project1"
+          style="display: flex; width: 100%; justify-content: center"
+        >
+          <div class="projectScreenShot">
             <img
-              src="./images/anjal.jpeg"
-              alt="User Image"
-              width="220px"
-              style="border-radius: 50%; background-position: center"
+              src="./images/projectScreenshots/osProject.png"
+              alt="project Image"
+              height="270"
             />
           </div>
 
-          <div class="aboutText">
-            Hi, I'm Anjal Sharma Phuyal, a passionate web developer and aspiring
-            machine learning engineer. I specialize in MERN stack and Next.js,
-            crafting intuitive and scalable applications. Currently, I'm
-            pursuing my bachelor's degree at Itahari International College,
-            Nepal. I love exploring AI, data science, and system design,
-            constantly expanding my skills. Beyond coding, I enjoy teaching
-            programming, mentoring students, and sharing knowledge. My projects
-            range from e-commerce platforms to emergency IoT systems for elderly
-            care. With a problem-solving mindset and a thirst for innovation, I
-            aim to build impactful digital solutions that make a difference. 🚀
-            <br />
+          <div
+            class="projectDetails"
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 40%;
+
+              gap: 10px;
+            "
+          >
+            <div class="projectTitle">
+              <h3><u>OS in Browser (Portfolio)</u></h3>
+            </div>
+            <div class="projectDesc">
+              <p>
+                This is an ongoing hobby project where I am developing a
+                browser-based operating system. What started as a simple
+                experiment gradually evolved into a complex system with various
+                features, making it a significant and worthy addition to my
+                portfolio. It showcases my ability to tackle challenging
+                projects, implement intricate functionalities, and push the
+                boundaries of web development.
+              </p>
+              <br />
+              <hr />
+              <div class="techUsed">
+                <ul
+                  class="techUsed"
+                  style="display: flex; list-style: none; gap: 12px"
+                >
+                  <li><b>React</b></li>
+                  <li><b>Node</b></li>
+                  <li><b>CSS</b></li>
+                  <li><b>Figma</b></li>
+                </ul>
+              </div>
+              <div class="links-code">
+                <div class="github">
+                  <a href="">
+                    <img src="./images/github.png" alt="Github" width="23"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="line" style="bottom: 0; position: relative"></div>
+
+        <!-- project 2 -->
+        <div
+          class="project project2"
+          style="
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: row-reverse;
+          "
+        >
+          <div class="projectScreenShot">
+            <img
+              src="./images/projectScreenshots/watchify.png"
+              alt="project Image"
+              height="270"
+            />
+          </div>
+
+          <div
+            class="projectDetails"
+            style="
+              display: flex;
+              flex-direction: column;
+              width: 40%;
+
+              gap: 10px;
+            "
+          >
+            <div class="projectTitle">
+              <h3><u>Watchify (FrontEnd)</u></h3>
+            </div>
+            <div class="projectDesc">
+              <p>
+                This is a front-end part of a watch showcase website where a
+                collection of watch brands and their varities of watches are
+                showcased, this website uses beautiful animations and great
+                design philosophy, backend is not integrated intentionally
+                because this project is just to showcase my front-end and
+                website interactivity skills
+              </p>
+              <br />
+              <hr />
+              <div class="techUsed">
+                <ul
+                  class="techUsed"
+                  style="display: flex; list-style: none; gap: 12px"
+                >
+                  <li><b>HTML</b></li>
+                  <li><b>JS</b></li>
+                  <li><b>CSS</b></li>
+                  <li><b>Balsamiq</b></li>
+                </ul>
+              </div>
+              <div class="links-code">
+                <div class="github">
+                  <a href="">
+                    <img src="./images/github.png" alt="Github" width="23"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <br /><br /><br />
     <div class="contactMe">
       <div class="contactMeTitle">
         <div class="line" style="width: 60%"></div>
