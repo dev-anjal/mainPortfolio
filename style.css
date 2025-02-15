@@ -7,7 +7,7 @@
 }
 
 :root {
-  --aboutMeBgColor: rgb(228, 232, 232);
+  --aboutMeBgColor: rgb(238, 243, 243);
 }
 * {
   margin: 0;
@@ -117,13 +117,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+#experience {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about {
   width: 100%;
   background-color: var(--aboutMeBgColor);
   height: fit-content;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  padding: 52px;
+}
+.experience {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 52px;
 }
@@ -138,6 +151,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.experienceTitle {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experienceTitle .text {
+  background-color: var(--aboutMeBgColor);
 }
 .aboutMeTitle .text {
   background-color: var(--aboutMeBgColor);
@@ -192,6 +216,40 @@ a {
   justify-content: center;
   align-items: center;
 }
+.job {
+  margin: 16px;
+  transform: translateX(10%);
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  padding: 20px;
+  gap: 29px;
+}
+.breakerLine {
+  width: 120%;
+  position: relative;
+  left: -16%;
+  height: 2px;
+  background-color: rgb(169, 165, 165);
+}
+.titleName {
+  width: fit-content;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.jobb1 {
+  border-right: 2.6px solid rgb(170, 166, 166);
+  padding-right: 19px;
+}
+
+.jobb2 {
+  border-left: 2.6px solid rgb(170, 166, 166);
+  padding-left: 40px;
+}
 footer {
   width: 100%;
   height: fit-content;
@@ -205,6 +263,12 @@ footer {
 }
 footer {
   padding: 16px;
+}
+.seperator {
+  width: 100%;
+  height: 80px;
+  background-color: var(--aboutMeBgColor);
+  opacity: 0.46;
 }
 /* mobile responsiveness here */
 
@@ -235,6 +299,31 @@ footer {
   }
   .line {
     width: 98%;
+  }
+  .job {
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(0);
+  }
+  .sideDetailsExperience {
+    display: none;
+  }
+  .titleName {
+    padding: 30px;
+    min-width: fit-content;
+    border: 2.6px solid rgb(170, 166, 166);
+  }
+  .breakerLine {
+    width: 120%;
+    position: relative;
+    left: -10%;
+    height: 2px;
+    background-color: rgb(169, 165, 165);
+  }
+  .jobDate {
+    display: flex;
+    text-align: start;
+    font-size: 0.53rem !important;
   }
 }
 
