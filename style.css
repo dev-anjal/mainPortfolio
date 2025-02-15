@@ -203,6 +203,9 @@ footer {
   display: flex;
   gap: 10px;
 }
+footer {
+  padding: 16px;
+}
 /* mobile responsiveness here */
 
 @media (max-width: 1100px) {

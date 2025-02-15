@@ -126,5 +126,18 @@
         /></a>
       </div>
     </div>
+
+    <footer>
+      <h4 class="footerText"></h4>
+    </footer>
+
+    <script>
+      var date = new Date();
+
+      var year = date.getFullYear();
+
+      var Text = "&copy; Anjal S. Phuyal " + year;
+      document.querySelector(".footerText").innerHTML = Text;
+    </script>
   </body>
 </html>
