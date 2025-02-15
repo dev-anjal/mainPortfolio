@@ -29,10 +29,11 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgba(213, 230, 245, 0.105);
-  backdrop-filter: blur(5px);
+  background-color: rgba(213, 229, 243, 0.091);
+  backdrop-filter: blur(3px);
   top: 0;
   z-index: 9999;
+  border-bottom: 0.001px solid rgba(205, 198, 198, 0.437);
 }
 .topNavigation {
   backdrop-filter: 100px;
@@ -48,7 +49,7 @@ body {
 }
 .navigationItems ul {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   font-weight: 600;
 }
 .navigationItems ul li {
@@ -159,6 +160,7 @@ a {
 .introMainSection .aboutText {
   text-align: center;
   margin: 20px;
+  padding: 40px;
 }
 
 .introduction {
@@ -175,7 +177,7 @@ a {
 }
 .contactMe {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +192,17 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
 /* mobile responsiveness here */
 
 @media (max-width: 1100px) {
