@@ -413,4 +413,7 @@ footer {
   .downArrow {
     bottom: 100px;
   }
+  .projectScreenShot {
+    scale: 0.4;
+  }
 }
