@@ -376,10 +376,11 @@ footer {
   }
   .project {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     flex-direction: column;
-    width: 90%;
+    max-width: 100vw;
+    gap: 0;
   }
   .projectDetails {
     display: flex;
@@ -387,7 +388,14 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-
+  .project1 {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .project1 .projectTitle h3 {
+    text-align: center;
+  }
   .projectDesc {
     display: flex;
     justify-content: center;
@@ -401,6 +409,9 @@ footer {
   .projectScreenShot {
     scale: 0.6;
   }
+  .projectTitle {
+    width: 60vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -412,8 +423,5 @@ footer {
   }
   .downArrow {
     bottom: 100px;
-  }
-  .projectScreenShot {
-    scale: 0.4;
   }
 }
