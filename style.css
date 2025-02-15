@@ -280,7 +280,8 @@ footer {
   align-items: center;
 }
 .projects {
-  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
   height: fit-content;
   background-color: var(--aboutMeBgColor);
   display: flex;
@@ -296,6 +297,7 @@ footer {
 }
 .project {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
